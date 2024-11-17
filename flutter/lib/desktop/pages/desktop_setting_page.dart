@@ -73,7 +73,7 @@ class DesktopSettingPage extends StatefulWidget {
     if (!isWeb && !bind.isIncomingOnly() && bind.pluginFeatureIsEnabled())
       SettingsTabKey.plugin,
     if (!bind.isDisableAccount()) SettingsTabKey.account,
-    SettingsTabKey.about,
+    // SettingsTabKey.about,
   ];
 
   DesktopSettingPage({Key? key, required this.initialTabkey}) : super(key: key);
@@ -199,7 +199,7 @@ class _DesktopSettingPageState extends State<DesktopSettingPage>
           children.add(const _Account());
           break;
         case SettingsTabKey.about:
-          children.add(const _About());
+          // children.add(const _About());
           break;
       }
     }
