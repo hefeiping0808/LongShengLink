@@ -439,15 +439,15 @@ abstract class BasePeersView extends StatelessWidget {
       case PeerTabIndex.fav:
         peers = gFFI.favoritePeersModel;
         break;
-      case PeerTabIndex.lan:
-        peers = gFFI.lanPeersModel;
-        break;
-      case PeerTabIndex.ab:
-        peers = gFFI.abModel.peersModel;
-        break;
-      case PeerTabIndex.group:
-        peers = gFFI.groupModel.peersModel;
-        break;
+      // case PeerTabIndex.lan:
+      //   peers = gFFI.lanPeersModel;
+      //   break;
+      // case PeerTabIndex.ab:
+      //   peers = gFFI.abModel.peersModel;
+      //   break;
+      // case PeerTabIndex.group:
+      //   peers = gFFI.groupModel.peersModel;
+      //   break;
     }
     return _PeersView(
         peers: peers, peerFilter: peerFilter, peerCardBuilder: peerCardBuilder);

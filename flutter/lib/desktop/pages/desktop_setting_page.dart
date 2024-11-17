@@ -72,7 +72,7 @@ class DesktopSettingPage extends StatefulWidget {
     if (!bind.isIncomingOnly()) SettingsTabKey.display,
     if (!isWeb && !bind.isIncomingOnly() && bind.pluginFeatureIsEnabled())
       SettingsTabKey.plugin,
-    if (!bind.isDisableAccount()) SettingsTabKey.account,
+    // if (!bind.isDisableAccount()) SettingsTabKey.account,
     // SettingsTabKey.about,
   ];
 
@@ -164,8 +164,8 @@ class _DesktopSettingPageState extends State<DesktopSettingPage>
               tab, 'Plugin', Icons.extension_outlined, Icons.extension));
           break;
         case SettingsTabKey.account:
-          settingTabs.add(
-              _TabInfo(tab, 'Account', Icons.person_outline, Icons.person));
+          // settingTabs.add(
+          //     _TabInfo(tab, 'Account', Icons.person_outline, Icons.person));
           break;
         case SettingsTabKey.about:
           // settingTabs
@@ -196,7 +196,7 @@ class _DesktopSettingPageState extends State<DesktopSettingPage>
           children.add(const _Plugin());
           break;
         case SettingsTabKey.account:
-          children.add(const _Account());
+          // children.add(const _Account());
           break;
         case SettingsTabKey.about:
           // children.add(const _About());
