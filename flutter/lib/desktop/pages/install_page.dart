@@ -166,7 +166,7 @@ class _InstallPageBodyState extends State<_InstallPageBody>
               Row(
                 children: [
                   Expanded(
-                    // NOT use Offstage to wrap LinearProgressIndicator
+                    // NOT use Offstage to wrap LisnearProgressIndicator
                     child: Obx(() => showProgress.value
                         ? LinearProgressIndicator().marginOnly(right: 10)
                         : Offstage()),
